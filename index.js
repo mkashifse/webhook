@@ -2,6 +2,7 @@ var express = require('express')
 var app = express()
 
 const PORT = process.env.PORT || 8080;
+console.log(PORT);
 
 // respond with "hello world" when a GET request is made to the homepage
 app.post('/webhook', function (req, res) {
@@ -15,4 +16,4 @@ app.get('/home', function (req, res) {
   res.send('Welcome to HOme')
 })
 
-app.listen(PORT, () => { console.log(PORT) });
+app.listen(PORT,() => { console.log(PORT) });
